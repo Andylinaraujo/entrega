@@ -1,0 +1,77 @@
+<!-- Criado por Marise Miranda | 2017.1 -->
+<!-- Adaptado por Matheus Matos | 2025.1 -->
+
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPTecher's Machine</title>
+</head>
+
+<body bgcolor="#0">
+
+    <style>
+        body {
+            background-image: url("7QeAWe6.jpg");
+            background-size: cover;
+        }
+
+        .cortext {
+            color: crimson;
+
+        }
+        .video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: black;
+}
+    </style>
+    <center>
+        <div>
+            <h1 class="cortext">SPTecher's Machine</h1>
+
+            <h3 class="cortext">Digite um número decimal:</h3>
+            <input id="demo1" type="text" placeholder="Ex: 42">
+            <br><br>
+
+            <button onclick="converter()">Converter</button>
+
+            <h3 class="cortext">Resultados:</h3>
+            <p class="cortext">Octal:
+            <div id="demo2"></div>
+            </p>
+            <p class="cortext">Hexadecimal:
+            <div id="demo3"></div>
+            </p>
+            <p class="cortext">Binário:
+            <div id="demo4"></div>
+            </p>
+            <div id="div5"></div>
+        </div>
+    </center>
+
+    <script>
+        function converter() {
+            var decimal = Number(demo1.value);
+
+            demo2.innerHTML = `<span style ='color:#FFFFFF;'>${decimal.toString(8)}</span>`
+            demo3.innerHTML = `<span style ='color:#FFFFFF;'>${decimal.toString(16)}</span>`
+            demo4.innerHTML = `<span style ='color:#FFFFFF;'>${decimal.toString(2)}</span>`
+            const min = 1;
+            const max = 30;
+
+            const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+            if (randomNumber == 20) {
+            <video> <source src="rickroll.mp4" autoplay class="video"></source></video>
+        }
+        }
+    </script>
+</body>
+
+</html>
